@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Frontend.master.cs" Inherits="WebApplication1.MasterPages.Frontend" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="PageWrapper">
+            <header><a href="/">HEADER GOES HERE</a></header>
+            <nav>MENU GOES HERE</nav>
+            <section id="MainContent">
+                <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
+                    
+                </asp:ContentPlaceHolder>
+            </section>
+            <aside id="Sidebar">SIDEBAR GOES HERE</aside>
+            <footer>FOOTER GOES HERE</footer>
+        </div>
+    </form>
+</body>
+</html>
